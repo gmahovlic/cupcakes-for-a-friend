@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cupcake Paradise</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fce4ec;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff80ab;
+      padding: 10px;
+      text-align: center;
+      color: #333;
+      text-decoration: none !important;
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 500;
+    }
+    
+    a {
+      color: #333;
+      text-decoration: none !important;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .carousel-img {
+      width: 300px;
+      height: 300px;
+    }
+
+    .galery-img {
+      width: 150px;
+      height: 150px;
+      margin: 10px 5px;
+    }
+
+    .img-container {
+      overflow: hidden;
+      position: relative;
+      border-radius: 20px;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .carousel-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flavour {
+      margin-top: 15px;
+    }
+
+    .title {
+      font-size: 80px;
+      font-weight: 500;
+      margin-top: 100px;
+    }
+
+    .sub {
+      font-size: 30px;
+      font-style: italic;
+    }
+
+    #contact {
+      margin-bottom: 200px;
+    }
+
+    .inner-section {
+      margin: 100px 0 0 0;
+    }
+
+    .galery-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .galery {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 510px;
+    }
+
+    footer {
+      background-color: #ff80ab;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>&#129473; Cupcake Paradise &#129473;</h1>
+    <nav>
+      <a href="#home">
+        Home
+      </a>
+      <a href="#flavors">
+        Flavors
+      </a>
+      <a href="#gallery">
+        Gallery
+      </a>
+      <a href="#contact">
+        Contact
+      </a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="inner-section">
+      <div class="title">
+        Welcome to
+        <br>
+        Cupcake Paradise!
+      </div>
+      <div class="sub">
+        Indulge in the sweet world of delicious cupcakes.
+      </div>
+    </div>
+  </section>
+
+  <section id="flavors">
+    <div class="inner-section">
+      <h2>Our Irresistible Flavors</h2>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-item">
+            <div class="img-container carousel-img">
+              <img src="https://handletheheat.com/wp-content/uploads/2021/02/chocolate-cupcakes-SQUARE-550x550.png" alt="Chocolate">
+            </div>
+            <div class="flavour">
+              Chocolate
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img-container carousel-img">
+              <img src="https://handletheheat.com/wp-content/uploads/2014/04/Dulce-de-Leche-Banana-Cupcakes-with-Chocolate-Frosting-SQUARE.jpg" alt="Dulce de Leche Banana">
+            </div>
+            <div class="flavour">
+              Dulce de Leche Banana
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img-container carousel-img">
+              <img src="https://handletheheat.com/wp-content/uploads/2015/02/Chocolate-Raspberry-Cupcakes-square.jpg" alt="Raspberry Chocolate">
+            </div>
+            <div class="flavour">
+              Raspberry Chocolate
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img-container carousel-img">
+              <img src="https://handletheheat.com/wp-content/uploads/2012/08/Chocolate-Mint-Cupcakes-SQUARE-550x550.jpg" alt="Mint Chocolate">
+            </div>
+            <div class="flavour">
+              Mint Chocolate
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="inner-section">
+      <h2>
+        Delightful Cupcake Gallery
+      </h2>
+      <div class="galery-wrapper">
+        <div class="galery">
+          <div class="img-container galery-img">
+            <img src="https://www.barleyandsage.com/wp-content/uploads/2023/02/mini-cupcakes-1200x1200-1.jpg" alt="Cupcake 1">
+          </div>
+          <div class="img-container galery-img">
+            <img src="https://benditosalgado.com.br/wp-content/uploads/2022/06/Cupcake-RedVelvet.jpg" alt="Cupcake 2">
+          </div>
+          <div class="img-container galery-img">
+            <img src="https://static.wixstatic.com/media/627c4d_ed322a1bed074798b8e56ec145fd4648~mv2.jpg/v1/fill/w_480,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/627c4d_ed322a1bed074798b8e56ec145fd4648~mv2.jpg" alt="Cupcake 3">
+          </div>
+          <div class="img-container galery-img">
+            <img src="https://www.eatingwell.com/thmb/1CZGKiXPwslCCgX3ifp0jBetRSo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Mini-Cupcakes-with-Cream-Cheese-frosting-160-c59c271f38db40ae9a78722595d777e4.jpg" alt="Cupcake 4">
+          </div>
+          <div class="img-container galery-img">
+            <img src="https://thetoastykitchen.com/wp-content/uploads/2022/12/mini-red-velvet-cupcakes-closeup-500x500.jpg" alt="Cupcake 5">
+          </div>
+          <div class="img-container galery-img">
+            <img src="https://www.cookwithnabeela.com/wp-content/uploads/2023/10/OreoCupcakes.webp" alt="Cupcake 6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="inner-section">
+      <h2>
+        Contact Us
+      </h2>
+      <p>
+        Have a question or want to place an order? Reach out to us!
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2023 Cupcake Paradise. All rights reserved. Brand name generated by AI.
+    </p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = document.querySelector('.carousel');
+      const items = carousel.children.length
+      let currentIndex = 0;
+
+      function showCurrentIndex() {
+        carousel.style.transform = `translateX(${-currentIndex * 100}%)`;
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % items;
+        showCurrentIndex();
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + items) % items;
+        showCurrentIndex();
+      }
+
+      setInterval(nextSlide, 3000);
+    });
+  </script>
+</body>
+</html>
